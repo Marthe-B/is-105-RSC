@@ -1,2 +1,4 @@
 # is-105-RSC
- test
+
+
+Her finner du det vi jobber med i de forskjellige ICA oppgavene
