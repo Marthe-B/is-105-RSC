@@ -31,10 +31,10 @@ func IterateOverASCIIStringLiteral(stringLiteral string) {
 	// Kode for Oppgave 1a
 	for i := 0; i < len(stringLiteral); i++ {
 		//var char = stringLiteral[i]
-		fmt.Printf("%X ", stringLiteral[i])
-		fmt.Printf("%c ", stringLiteral[i])
-		fmt.Printf("%b ", stringLiteral[i])
-		fmt.Printf("%#q \n", stringLiteral[i]) //bonus
+		fmt.Printf("%#X ", stringLiteral[i])
+		fmt.Printf("%#c ", stringLiteral[i])
+		fmt.Printf("% 08b \n", stringLiteral[i])
+		//fmt.Printf("%#q \n", stringLiteral[i]) //bonus
 	}
 }
 
