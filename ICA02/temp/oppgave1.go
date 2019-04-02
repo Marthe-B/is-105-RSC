@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Marthe-B/is105-ica02/ascii"
+	"github.com/Marthe-B/IS-105-RSC/ICA02/ascii"
 )
 
 func main() {
@@ -11,5 +11,5 @@ func main() {
 	}
 
 	ascii.IterateOverASCIIStringLiteral(ascii.GetASCIIStringLiteral())
-	ascii.IterateOverASCIIStringLiteral("Dette er en test")
+	//ascii.IterateOverASCIIStringLiteral("Dette er en test")
 }

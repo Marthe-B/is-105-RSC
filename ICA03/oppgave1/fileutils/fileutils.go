@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func fileToByteslice(filename string) []byte {
+func FileToByteslice(filename string) []byte {
 
 	// Open file for reading
 	file, err := os.Open(filename)
