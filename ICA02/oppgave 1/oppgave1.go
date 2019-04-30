@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Marthe-B/is105-ica02/ascii"
+	"../ascii"
 )
 
 func main() {

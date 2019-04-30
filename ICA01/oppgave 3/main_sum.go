@@ -43,7 +43,7 @@ func main() {
 	//fmt.Println(int1 + int2)
 
 	fmt.Println(sum.SumInt64(int64(int1), int64(int2)))
-	fmt.Println(sum.SumFloat64(float64(int1), float64(int2)))
+	//fmt.Println(sum.SumFloat64(float64(int1), float64(int2)))
 }
 
 //func SumInt8(a, b int8) int8 {

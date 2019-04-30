@@ -32,13 +32,15 @@ func IterateOverASCIIStringLiteral(stringLiteral string) {
 	for i := 0; i < len(stringLiteral); i++ {
 		//var char = stringLiteral[i]
 		fmt.Printf("%#X ", stringLiteral[i])
-		fmt.Printf("%#c ", stringLiteral[i])
+		fmt.Printf("%c ", stringLiteral[i])
 		fmt.Printf("% 08b \n", stringLiteral[i])
 		//fmt.Printf("%#q \n", stringLiteral[i]) //bonus
 	}
 }
 
-// Unix-like operating systems are known to use it as erase control character, i.e. to delete the previous character in the line mode.
+// Unix-like operating systems are known to use it as erase
+// control character, i.e. to delete the previous character
+// in the line mode.
 
 // Funksjonen skal generere en utskrift fra en sekvens av bytes,
 // dvs. av typen []bytes (det betyr at du må finne den heksadesimale
