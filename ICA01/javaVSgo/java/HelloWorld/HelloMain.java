@@ -5,8 +5,6 @@
  */
 public class HelloMain
 {
-    
-
     /**
      * Constructor for objects of class HelloMain
      */
