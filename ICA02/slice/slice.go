@@ -15,7 +15,6 @@ func AllocateVar(b int) []byte {
 }
 
 // AllocateMake tar lengde og kapasitet som b og lager en ny slice
-//
 func AllocateMake(b int) []byte {
 	// Kode for Oppgave 5a
 	slice := make([]byte, b)
@@ -31,6 +30,7 @@ func Reslice(slc []byte, lidx int, uidx int) []byte {
 	return newSlice
 }
 
+// CopySlice kopierer en slice og lager en ny
 func CopySlice(slc []byte) []byte {
 
 	//oldslice := slc
