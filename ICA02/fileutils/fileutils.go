@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// FileToByteslice har en "string literal" som argument 
+// FileToByteslice har en "string literal" som argument
 // og returnerer en "slice"
 func FileToByteslice(filename string) []byte {
 
