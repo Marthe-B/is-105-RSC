@@ -31,8 +31,8 @@ func IterateOverASCIIStringLiteral(stringLiteral string) {
 	// Kode for Oppgave 1a
 	for i := 0; i < len(stringLiteral); i++ {
 		//var char = stringLiteral[i]
-		fmt.Printf("%#X ", stringLiteral[i])
-		fmt.Printf("%c ", stringLiteral[i])
+		fmt.Printf("%X ", stringLiteral[i])
+		fmt.Printf("%q ", stringLiteral[i])
 		fmt.Printf("% 08b \n", stringLiteral[i])
 		//fmt.Printf("%#q \n", stringLiteral[i]) //bonus
 	}
@@ -51,5 +51,8 @@ func IterateOverASCIIStringLiteral(stringLiteral string) {
 // som inneholder kun ASCII tegn (ikke utvidet ASCII).
 // Gjelder oppgave 1c
 func GreetingASCII() string {
-	return ascii
+	greet := []byte("\x22\x48\x65\x6c\x6c\x6f\x20\x3a\x2d\x29\x22")
+	s := string(greet)
+	return s
+	//return ascii
 }
