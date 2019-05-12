@@ -7,7 +7,6 @@ import (
 	"time"
 )
 
-// https://golang.org/doc/effective_go.html#init
 func init() {
 	seed := time.Now().Unix()
 	rand.Seed(seed)
@@ -20,8 +19,7 @@ func perm(n int) (out []int) {
 	return
 }
 
-// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
-// Skriv en ny testfunksjon benchmarkBSortModified
+// Testfunksjon Bsort
 
 func BenchmarkBSort100(b *testing.B) {
 	benchmarkBSort(100, b)
@@ -44,10 +42,10 @@ func benchmarkBSort(i int, b *testing.B) {
 	}
 }
 
-// Implementasjon av testfunksjoner for Quicksort algoritmen
+// Testfunksjoner for Quicksort algoritmen
 func TestQSort(t *testing.T) {
-	values := []int{9, 1, 20, 3, 6, 7}
-	expected := []int{1, 3, 6, 7, 9, 20}
+	values := []int{1, 4, 2, 3, 7, 6, 8, 5, 3, 0}
+	expected := []int{0, 1, 2, 3, 3, 4, 5, 6, 7, 8}
 
 	QSort(values)
 
@@ -74,5 +72,27 @@ func benchmarkQSort(i int, b *testing.B) {
 		values := perm(i)
 		b.StartTimer()
 		QSort(values)
+	}
+}
+
+//Ny testfunksjon BSortModified
+func BenchmarkMBSort100(b *testing.B) {
+	benchmarkBSortModified(100, b)
+}
+
+func BenchmarkMBSort1000(b *testing.B) {
+	benchmarkBSortModified(1000, b)
+}
+
+func BenchmarkMBSort10000(b *testing.B) {
+	benchmarkBSortModified(10000, b)
+}
+
+func benchmarkBSortModified(i int, b *testing.B) {
+	for j := 0; j < b.N; j++ {
+		b.StopTimer()
+		values := perm(i)
+		b.StartTimer()
+		Bubble_sort_modified(values)
 	}
 }

@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+
+
 func FileToByteslice(filename string) []byte {
 
 	// Open file for reading
